@@ -5,5 +5,5 @@ services:
     ports:
       - 8000:8000
     deploy:
-      mode: replicated
-      replicas: 4
+      mode: global
+      replicas: 3

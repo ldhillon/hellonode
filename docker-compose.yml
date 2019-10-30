@@ -6,4 +6,4 @@ services:
       - 8000:8000
     deploy:
       mode: replicated
-      replicas: 3
+      replicas: 4

@@ -33,11 +33,4 @@ node {
             app.push("latest")
         }
     }
-
-    stage('Deploy'){
-    withEnv(['DOCKER_HOST=tcp://dockermaster:2375']) {
-      sh "docker stack deploy --compose-file docker-compose.yml local-dev"
-      sh "docker service ps local-dev_hellonode"
-      }
-    } 
 }

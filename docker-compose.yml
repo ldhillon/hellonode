@@ -3,7 +3,7 @@ services:
   hellonode:
     image: registry-server.lsd.com:5000/hellonode:latest
     ports:
-      - 8000:8000
+      - 8002:8000
     deploy:
       mode: replicated
       replicas: 30
